@@ -1,0 +1,44 @@
+.tool-wrapper {
+  display: flex;
+  border: 1px solid #E6E6E6;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: 0.3s border-color;
+}
+
+.tool-wrapper:hover {
+  border-color: #AEAEAE;
+}
+
+.tool-image {
+  width: 140px;
+}
+
+.tool-data {
+  padding: 20px;
+}
+
+.tool-name {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .tool-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .tool-image {
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  .tool-data {
+    padding: 0;
+    text-align: center;
+  }
+}
